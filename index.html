@@ -245,6 +245,10 @@
         document.getElementById("answer").addEventListener("keydown", function(e) {
             if (e.key === "Enter") checkAnswer();
         });
+
+        document.addEventListener('contextmenu', function (event) {
+            event.preventDefault();
+        });
     </script>
 </body>
 </html>
